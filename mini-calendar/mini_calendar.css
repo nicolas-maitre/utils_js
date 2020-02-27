@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+.none{
+    display: none!important;
+}
+
+.miniCalendar{
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 0 5px #666;
+}
+.miniCalendar button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+    transform: scale(1);
+}
+.miniCalendar button:hover{
+    transform: scale(1.1);
+}
+.miniCalendar button:active{
+    transform: scale(0.8);
+}
+.miniCalendar .header {
+    border-bottom: 1px solid 
+    #ccc;
+    position: relative;
+    height: 30px;
+    padding: 5px;
+}
+.miniCalendar .backBtn,
+.miniCalendar .nextBtn {
+    position: absolute;
+    left: 5px;
+    height: 20px;
+    line-height: 0;
+    font-size: 20px;
+}
+.miniCalendar .nextBtn{
+    left: auto;
+    right: 5px;
+}
